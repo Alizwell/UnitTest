@@ -5,14 +5,13 @@ import { shallow } from 'enzyme';
 import Demo from './demo';
 
 describe('<Demo />', ()=>{
-    it('renders without crashing', ()=>{
+    xit('renders without crashing', ()=>{
         shallow(<Demo />);
     });
 
-    it('render content', ()=>{
+    fit('render content', ()=>{
         const wrapper = shallow(<Demo />);
         const welcome = <span>1234</span>;
-        // expect(wrapper.contains(welcome)).toBe(true);
-        // expect(wrapper.contains(welcome)).toEqual(false);
+        expect(wrapper.contains(welcome)).toBe(true);        
     })
 })

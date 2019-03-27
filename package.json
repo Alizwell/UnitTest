@@ -2,6 +2,13 @@
   "name": "enzymeDemo",
   "version": "0.1.0",
   "private": true,
+  "jest":{
+    "collectCoverageFrom": [
+      "src/**/*",
+      "!<rootDir>/node_modules/",
+      "!<rootDir>/path/to/dir/"
+    ]    
+  },
   "dependencies": {
     "react": "^16.8.5",
     "react-dom": "^16.8.5",

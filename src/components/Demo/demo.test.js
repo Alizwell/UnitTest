@@ -16,15 +16,8 @@ it('renders without crashing', () => {
 });
 
 it('renders welcome message', () => {
-    const wrapper = shallow(<Demo />);
-    const welcome = <h2>Welcome to React</h2>;
-    console.log(wrapper);
-    expect(wrapper.contains(welcome)).toBe(true);    
-  });
-
-  it('renders welcome message', () => {
-    const wrapper = shallow(<Demo />);
-    const welcome = <span>1234</span>;
-    console.log(wrapper);
-    expect(wrapper.contains(welcome)).toBe(true);    
-  });
+  const wrapper = shallow(<Demo />);
+  const welcome = <h2>Welcome to React</h2>;
+  console.log(wrapper);
+  expect(wrapper.contains(welcome)).toBe(true);    
+});
